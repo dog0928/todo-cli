@@ -3,4 +3,11 @@ name = "todo-cli"
 version = "0.1.0"
 edition = "2024"
 
+[target.x86_64-unknown-linux-gnu]
+image = "ghcr.io/cross-rs/x86_64-unknown-linux-gnu:main-centos"
+
 [dependencies]
+anyhow = "1.0.102"
+clap = { version = "4.6.1", features = ["derive"] }
+env_logger = "0.11.10"
+log = "0.4.29"
